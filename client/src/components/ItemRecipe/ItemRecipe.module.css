@@ -1,0 +1,103 @@
+.itemContainer {
+    position: relative;
+    height: 180px;
+    width: 490px;
+    padding: 10px;
+    /* background-color: #f4f4f7; */
+    background: linear-gradient(to left, #232324 0%, #5755c5 100% );
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemContainer:hover {
+    box-shadow: 0px 0px 10px 0px #ea7c697a;
+    transition: all 0.2s ease;
+}
+.imgInfo {
+    position: relative;
+    min-width: 190px;
+    height: 150px;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.imgInfo div {
+    position: absolute;
+    width: 190px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.671);
+    opacity: 0;
+    color: white;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgInfo div img {
+    width: 20px;
+    height: 20px;
+}
+.itemContainer:hover .imgInfo div {
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+.textContainer {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title title'
+        'serving  diet';
+    margin-left: 20px;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title p {
+    font-weight: 700;
+}
+.servingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+}
+.servingContainer p,
+.dietsContainer p {
+    margin: 0;
+}
+.servingContainer svg {
+    width: 20px;
+    height: 20px;
+}
+.dietsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+}
+.dietsContainer span {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #abbbc2;
+    margin: 0;
+}
+.dietsContainer div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.img {
+    display: inline-block;
+    top: -30px;
+    width: 190px;
+    height: 150px;
+}

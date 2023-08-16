@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.container h3,
+.container h4 {
+    margin: 0;
+}
+.container span {
+    color:  darkblue;
+}
+
+
+.img {
+    width: 50%;
+    position: absolute;
+    /* right: -50%; */
+    left: 30%;
+    margin: auto 0;
+    /* animation: spinner-loading 220s linear infinite; */
+}

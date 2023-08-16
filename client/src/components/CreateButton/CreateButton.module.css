@@ -1,0 +1,18 @@
+.button {
+    width: 200px;
+    height: 60px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    background-color: #2c2b2a;
+}
+.button:hover {
+    filter: drop-shadow(0px 0px 10px  #1f274d);
+    transition: all 0.2s ease;
+}
+.button:active {
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}

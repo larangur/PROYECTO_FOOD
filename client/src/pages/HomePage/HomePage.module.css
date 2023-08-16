@@ -1,0 +1,29 @@
+.main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 600px 70px 1fr 40px;
+    grid-template-areas:
+        'header header'
+        'filters browser'
+        'filters recipes'
+        'footer footer';
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .main {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100px 200px 1fr 40px;
+        grid-template-areas:
+            'header'
+            'filters'
+            'browser'
+            'recipes'
+            'footer';
+    }
+}

@@ -1,0 +1,19 @@
+.browser {
+    width: 90%;
+    height: 70px;
+    grid-area: browser;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 200px 200px;
+    gap: 16px;
+}
+@media (max-width: 900px) {
+    .browser {
+        width: 100vw;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

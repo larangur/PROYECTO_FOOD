@@ -1,0 +1,231 @@
+.header {
+    width: 100%;
+    height: 7vh;
+    margin: 0;
+}
+
+.main {
+    margin: 0;
+    width: 100%;
+    height: 93vh;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'title info'
+        'steps info';
+}
+.titleContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    position: relative;
+    grid-area: title;
+}
+.title {
+    width: 500px;
+    color: white;
+}
+.titleContainer img {
+    width: 350px;
+    position: absolute;
+    /* right: -70px; */
+    left: 10%;
+    top: 40%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+.title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.summary {
+    margin: 0;
+    width: 1000px;
+    height: 200px;
+    color: #9199ae;
+    overflow-x: auto;
+}
+.summary p {
+    margin: 0;
+}
+.summary a {
+    color: #e0816b;
+}
+.diets {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 500px;
+    height: 50px;
+}
+.diets li {
+    height: 20px;
+}
+.diets p {
+    margin: 0;
+    color: #9199ae;
+}
+.infoSectionContainer {
+    width: 100%;
+    height: 100%;
+    grid-area: info;
+    display: table;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSection {
+    width: 30%;
+    height: 36%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    right: 1%;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+
+.recipeInfo {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoText {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.infoText div {
+    display: flex;
+    align-items: center;
+}
+
+.recipeIngredients {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.stepsContainer {
+    grid-area: steps;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 50vh;
+    
+}
+
+.steps {
+    width: 90%;
+    height: 95%;
+    position: relative;
+}
+.steps h4 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 90%;
+    overflow-x: auto;
+    /* display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    gap: 20px; */
+    padding-bottom: 70px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.step span {
+    color: #e0816b;
+    transform: rotate(-90deg);
+    width: 70px;
+    height: 20px;
+    text-align: end;
+    margin-top: 14px;
+    font-size: 1.1rem;
+}
+.step p {
+    margin: 0;
+    color: white;
+}
+.step div {
+    width: 100%;
+    min-height: 70px;
+}
+.stepsShadow {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 2px;
+    background: rgb(232, 234, 240);
+}
+
+
+.buttonDelete:hover {
+    filter: drop-shadow(0px 0px 10px #ea7c6994);
+    transition: all 0.2s ease;
+}
+.buttonDelete:active {
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 1280px) {
+    .title {
+        width: 500px;
+    }
+    .summary {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title {
+        width: 500px;
+    }
+    .summary {
+        width: 450px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .title {
+        width: 1000px;
+    }
+    .summary {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .title {
+        width: 1000px;
+    }
+    .summary {
+        width: 1000px;
+    }
+}

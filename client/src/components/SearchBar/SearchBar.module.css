@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    border-radius: 14px;
+    background-color: #2d303e;
+    border: 2px solid #3b3e4b;
+}
+
+.inputSearch {
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.inputSearch:current {
+    border: 0;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.button  {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 10px #ea7c6994);
+}
